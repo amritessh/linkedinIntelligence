@@ -7,6 +7,9 @@ import sys
 
 # Add your model's MetaData object here
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+sys.path.append(os.path.dirname(__file__))
+
+# Import all models to ensure they are registered with Base.metadata
 from models.base import Base
 from models.user import User
 from models.profile import LinkedInProfile
